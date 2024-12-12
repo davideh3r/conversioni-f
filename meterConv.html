@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertitore Misura</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div id="unitForm" class="form-container">
+        <h2>Conversione Unità di Misura</h2>
+        <label for="unitFrom">Unità di partenza:</label>
+        <select id="unitFrom">
+            <option value="meters">Metri</option>
+            <option value="kilometers">Chilometri</option>
+            <option value="decam">decametri</option>
+            <option value="centimetri">centrimetri</option>
+        </select>
+
+        <label for="unitTo">Unità di arrivo:</label>
+        <select id="unitTo">
+            <option value="meters">Metri</option>
+            <option value="kilometers">Chilometri</option>
+            <option value="decam">decametri</option>
+            <option value="centimetri">centimetri</option>
+        </select>
+
+        <label for="unitAmount">Quantità:</label>
+        <input type="number" id="unitAmount" placeholder="Inserisci quantità" />
+
+        <button id="convertUnit" onclick="conversionMeter()">Converti</button>
+        <div class="result" id="unitResult"></div>
+    </div>
+</body>
+</html>

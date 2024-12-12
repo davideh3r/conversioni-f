@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title>convertitore valuta</title>
+</head>
+<body>
+    <div id="currencyForm" class="form-container">
+        <h2>Conversione Valute</h2>
+        <label for="currencyFrom">Valuta di partenza:</label>
+        <select id="currencyFrom">
+            <option value="EUR">Euro (EUR)</option>
+            <option value="USD">Dollaro USA (USD)</option>
+            <option value="GBP">Sterlina (GBP)</option>
+            <option value="JPY">Yen (JPY)</option>
+        </select>
+        
+        <label for="currencyTo">Valuta di arrivo:</label>
+        <select id="currencyTo">
+            <option value="EUR">Euro (EUR)</option>
+            <option value="USD">Dollaro USA (USD)</option>
+            <option value="GBP">Sterlina (GBP)</option>
+            <option value="JPY">Yen (JPY)</option>
+        </select>
+        
+        <label for="currencyAmount">Ammontare:</label>
+        <input type="number" id="currencyAmount" placeholder="Inserisci importo" />
+    
+        <button id="convertCurrency" onclick="conversionValut()">Converti</button>
+        <div class="result" id="currencyResult"></div>
+    </div>
+</body>
+</html>
